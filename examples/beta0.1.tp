@@ -1,0 +1,9 @@
+var "name" = "Tepping"
+var "valueA" = 5
+var "valueB" = -2
+
+console.print("Olá, mundo! Olá $var(name)")
+console.print("$$var(name), ...$$$var(name)")
+if $var(valueA) > $var(valueB): {
+  console.print("$var(valueA) maior que $var(valueB)")
+}
