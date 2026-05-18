@@ -1,0 +1,45 @@
+#= cria variavéis e função
+e soma elas =#
+
+var "valueA" = 10
+var "valueB" = 25
+
+def "somar"(a, b): {
+  var "resultado" = a + b
+  return resultado
+}
+
+# soma
+var "resultado" = func "somar"(valueA, valueB)
+console.print("a soma de $var(valueA) com $var(valueB) é $var(resultado)")
+
+var "i" = 0
+while $var "i" < 10: {
+  var "i" += 0.5
+  var "i" = calc(i + 0.5) # os dois tipos fazem a soma (tando 1)
+  console.print("while: $var(i)")
+}
+for "i" range(9): {
+  console.print("for: $var(i)")
+}
+
+# esses dois modelos de while e for funviona igual
+
+#= 
+  Testando as novas implementações da versão beta:0.2
+  - Operadores += e -=
+  - Comando nativo calc()
+=#
+
+var "vida" = 100
+console.print("Vida Inicial: $var(vida)")
+
+var "vida" -= 25
+console.print("Levou dano! Vida atual: $var(vida)")
+
+var "vida" += 10
+console.print("Usou poção! Vida atual: $var(vida)")
+
+# Testando cálculos complexos com variáveis e números diretos
+var "ataque_total" = calc($var(vida) - 20 + 5)
+console.print("Poder de ataque calculado: $var(ataque_total)")
