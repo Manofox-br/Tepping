@@ -9,8 +9,9 @@ Ela permite declarar variáveis, imprimir valores e executar condições de form
 
 **`README`** -> ~/README.md
 
-**`models`** -> ~/examples/models.md
+**`Registro de alterações`** -> ~/docs/changelog.md
 
+**`Ajuda com erros`** -> docs/errors.md
 *~representa a raiz (pasta da linguagem)
 
 ---
